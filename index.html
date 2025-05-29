@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day Planner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🗓️ Day Planner</h1>
+
+    <!-- Date and Selector -->
+    <div class="date-controls">
+      <label for="datePicker">Select Date: </label>
+      <input type="date" id="datePicker">
+    </div>
+    <p id="currentDate" class="current-date"></p>
+
+    <!-- Dark Mode Toggle -->
+    <label class="theme-toggle">
+      <input type="checkbox" id="darkModeToggle"> 🌙 Dark Mode
+    </label>
+
+    <div id="planner"></div>
+
+    <!-- Buttons -->
+    <button id="clearAllBtn" class="saveBtn full-width">🗑️ Clear Tasks for Selected Date</button>
+    <button id="printBtn" class="saveBtn full-width">🖨️ Print / Export Tasks</button>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast">Task saved!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
